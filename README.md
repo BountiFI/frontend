@@ -16,8 +16,6 @@ Related repositories:
 - [`bountifi/backend`](https://github.com/BountiFi/backend) — NestJS API: GitHub sync, webhooks, bounty/escrow orchestration, reputation, analytics.
 - [`bountifi/contracts`](https://github.com/BountiFi/contracts) — Soroban smart contracts: escrow, milestone funding, maintenance pools, team splits.
 
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c019b457-90a0-4f2e-94d9-ab927de326dd" />
-
 ## Why Stellar and Soroban?
 
 - Very low transaction costs make micro-bounties (a $5 doc fix, a $20 bug fix) economically practical.
@@ -31,8 +29,6 @@ Related repositories:
 | **Contributors** | Discover paid issues, build a public reputation, earn USDC/XLM, track earnings. |
 | **Maintainers** | Create projects, attach rewards to issues, approve completed work, manage permissions. |
 | **Sponsors** | Fund repositories or specific issues/milestones, track spend, measure impact. |
-
-
 
 ## Feature map → routes
 
