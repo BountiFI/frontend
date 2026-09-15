@@ -5,7 +5,7 @@ import { useAuth } from "@/context/AuthContext";
 import { connectWallet } from "@/lib/wallet";
 import { apiRequest } from "@/lib/api";
 
-const WALLET_KEY = "mergefi_wallet_address";
+const WALLET_KEY = "bountifi_wallet_address";
 
 jest.mock("@/context/AuthContext", () => ({
   useAuth: jest.fn(),
@@ -134,7 +134,7 @@ describe("WalletContext — cross-tab sync (issue #84)", () => {
     act(() => {
       window.dispatchEvent(
         new StorageEvent("storage", {
-          key: "mergefi_token",
+          key: "bountifi_token",
           newValue: null,
           storageArea: window.localStorage,
         }),

@@ -7,7 +7,7 @@
  * Also covers adaptMilestone, adaptMaintenancePool, and adaptReputation
  * (#197) — previously the only three of this module's four exports with no
  * dedicated test at all, despite being the sole seam between
- * mergefi-backend's raw entity JSON and every number the milestones page,
+ * bountifi-backend's raw entity JSON and every number the milestones page,
  * maintenance-pool cards, and reputation profile page render.
  */
 
@@ -67,7 +67,7 @@ describe("adaptBounty — milestoneId mapping (#86)", () => {
   });
 
   it("normalizes a null milestoneId (no association) the same as an omitted one", () => {
-    // mergefi-backend's Issue.milestoneId is a nullable column, so the
+    // bountifi-backend's Issue.milestoneId is a nullable column, so the
     // real backend response says "no milestone" via `null`, not by
     // omitting the key entirely.
     const raw = rawBounty({

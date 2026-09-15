@@ -7,19 +7,19 @@ import { EmptyState } from "@/components/ui/EmptyState";
 import { Target, Droplets } from "lucide-react";
 
 const milestonesDescription =
-  "Fund open source release milestones and recurring maintenance pools through MergeFi.";
+  "Fund open source release milestones and recurring maintenance pools through BountiFi.";
 
 export const metadata: Metadata = {
-  title: "Milestones | MergeFi",
+  title: "Milestones | BountiFi",
   description: milestonesDescription,
   openGraph: {
-    title: "Milestones | MergeFi",
+    title: "Milestones | BountiFi",
     description: milestonesDescription,
     url: "/milestones",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Milestones | MergeFi",
+    title: "Milestones | BountiFi",
     description: milestonesDescription,
   },
 };

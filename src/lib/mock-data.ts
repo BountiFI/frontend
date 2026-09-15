@@ -24,7 +24,7 @@ export const mockBounties: Bounty[] = [
   {
     id: "b2",
     repo: "soroban-escrow-sdk",
-    org: "mergefi",
+    org: "bountifi",
     issueNumber: 17,
     title: "Add milestone allocation validation to escrow client",
     description:
@@ -40,7 +40,7 @@ export const mockBounties: Bounty[] = [
   {
     id: "b3",
     repo: "docs-site",
-    org: "mergefi",
+    org: "bountifi",
     issueNumber: 9,
     title: "Document Soroban escrow contract API reference",
     description:
@@ -132,7 +132,7 @@ export const mockReputationProfiles: Record<string, ReputationProfile> = {
     avgReviewTimeHours: 14,
     onTimeDeliveryRate: 0.88,
     languages: ["Rust", "TypeScript", "Go"],
-    organizations: ["stellar-labs", "mergefi"],
+    organizations: ["stellar-labs", "bountifi"],
   },
   "0xkoda": {
     handle: "0xkoda",
@@ -143,7 +143,7 @@ export const mockReputationProfiles: Record<string, ReputationProfile> = {
     avgReviewTimeHours: 20,
     onTimeDeliveryRate: 0.81,
     languages: ["Rust", "Solidity"],
-    organizations: ["mergefi"],
+    organizations: ["bountifi"],
   },
   devrel_ana: {
     handle: "devrel_ana",
@@ -165,7 +165,7 @@ export const mockReputationProfiles: Record<string, ReputationProfile> = {
     avgReviewTimeHours: 12,
     onTimeDeliveryRate: 0.9,
     languages: ["Go", "Python"],
-    organizations: ["stellar-labs", "mergefi"],
+    organizations: ["stellar-labs", "bountifi"],
   },
   linh_dev: {
     handle: "linh_dev",
@@ -176,7 +176,7 @@ export const mockReputationProfiles: Record<string, ReputationProfile> = {
     avgReviewTimeHours: 22,
     onTimeDeliveryRate: 0.78,
     languages: ["TypeScript", "Rust"],
-    organizations: ["mergefi"],
+    organizations: ["bountifi"],
   },
 };
 
@@ -209,7 +209,7 @@ export const platformStats = {
 
 export const trustedOrgs = [
   "stellar-labs",
-  "mergefi",
+  "bountifi",
   "openzeppelin",
   "soroban-foundation",
   "obsrvr",
@@ -334,9 +334,9 @@ export interface Faq {
 
 export const faqs: Faq[] = [
   {
-    question: "How does MergeFi decide when to release payment?",
+    question: "How does BountiFi decide when to release payment?",
     answer:
-      "MergeFi listens for GitHub webhooks. When a pull request that references a funded issue is merged, the backend verifies the event and calls the escrow contract's release function automatically. There's no manual approval step once a PR is merged.",
+      "BountiFi listens for GitHub webhooks. When a pull request that references a funded issue is merged, the backend verifies the event and calls the escrow contract's release function automatically. There's no manual approval step once a PR is merged.",
   },
   {
     question: "What happens if an issue never gets resolved?",
@@ -351,7 +351,7 @@ export const faqs: Faq[] = [
   {
     question: "Which assets can I fund a bounty with?",
     answer:
-      "MergeFi currently supports USDC and XLM. Funds are held in a Soroban smart contract on Stellar until release conditions are met.",
+      "BountiFi currently supports USDC and XLM. Funds are held in a Soroban smart contract on Stellar until release conditions are met.",
   },
   {
     question: "Do I need a Stellar wallet to participate?",

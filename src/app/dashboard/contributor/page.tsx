@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import ContributorDashboardClient from "./ContributorDashboardClient";
 
 export const metadata: Metadata = {
-  title: "Contributor Dashboard | MergeFi",
+  title: "Contributor Dashboard | BountiFi",
   description:
-    "Track your earnings, merged pull requests, and active claims on MergeFi.",
+    "Track your earnings, merged pull requests, and active claims on BountiFi.",
 };
 
 export default function ContributorDashboardPage() {

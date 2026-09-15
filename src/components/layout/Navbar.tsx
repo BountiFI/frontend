@@ -30,7 +30,7 @@ export function Navbar() {
             <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-slate-900 text-white dark:bg-white dark:text-slate-900">
               <GitMerge className="h-4 w-4" />
             </span>
-            MergeFi
+            BountiFi
           </Link>
           <nav className="hidden items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-400 md:flex">
             {links.map((link) => (

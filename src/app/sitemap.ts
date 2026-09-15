@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { fetchBounties, fetchReputationHandles } from "@/lib/api";
 import { mockBounties, mockReputationProfiles } from "@/lib/mock-data";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mergefi.app";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://bountifi.app";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes = ["", "/issues", "/milestones", "/connect"];

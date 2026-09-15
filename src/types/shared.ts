@@ -1,6 +1,6 @@
 export type UserRole = "contributor" | "maintainer" | "sponsor";
 
-// Mirrors mergefi-backend's BountyDifficulty enum
+// Mirrors bountifi-backend's BountyDifficulty enum
 export type Difficulty = "beginner" | "intermediate" | "advanced" | "expert";
 
 export interface TeamSplit {

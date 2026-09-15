@@ -158,7 +158,7 @@ export function IssueActions({ bounty }: { bounty: Bounty }) {
         </p>
       )}
       <p className="mt-3 text-xs text-slate-400 dark:text-slate-500">
-        Funding and claiming write to the live mergefi-backend API. Merge
+        Funding and claiming write to the live bountifi-backend API. Merge
         detection and payout release happen automatically via GitHub
         webhooks once a linked pull request is merged.
       </p>

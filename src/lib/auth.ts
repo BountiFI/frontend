@@ -1,4 +1,4 @@
-export const TOKEN_KEY = "mergefi_token";
+export const TOKEN_KEY = "bountifi_token";
 
 export function getToken(): string | null {
   if (typeof window === "undefined") return null;

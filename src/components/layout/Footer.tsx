@@ -31,7 +31,7 @@ export function Footer() {
               <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-slate-900 text-white dark:bg-white dark:text-slate-900">
                 <GitMerge className="h-4 w-4" />
               </span>
-              MergeFi
+              BountiFi
             </div>
             <p className="mt-3 max-w-xs text-sm text-slate-500 dark:text-slate-400">
               The financial infrastructure for open source. Merge code. Earn
@@ -58,7 +58,7 @@ export function Footer() {
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-100 pt-6 text-sm text-slate-400 dark:border-slate-800 dark:text-slate-500 sm:flex-row">
           <p>
-            © <CopyrightYear /> MergeFi. All rights reserved.
+            © <CopyrightYear /> BountiFi. All rights reserved.
           </p>
           <p>Where open source meets finance.</p>
         </div>

@@ -32,11 +32,11 @@ export async function generateMetadata({
   );
 
   if (!bounty) {
-    return { title: "Issue not found | MergeFi" };
+    return { title: "Issue not found | BountiFi" };
   }
 
-  const title = `${bounty.title} — ${formatCurrency(bounty.reward, bounty.asset)} | MergeFi`;
-  const description = bounty.description || `Fund or claim this bounty on MergeFi.`;
+  const title = `${bounty.title} — ${formatCurrency(bounty.reward, bounty.asset)} | BountiFi`;
+  const description = bounty.description || `Fund or claim this bounty on BountiFi.`;
 
   return {
     title,

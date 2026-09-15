@@ -12,7 +12,7 @@ import { formatCurrency } from "@/lib/utils";
 import { PipelineBoard, ESCROW_LOCKED_EXCLUDED_STATUSES } from "./PipelineBoard";
 
 export const metadata = {
-  title: "Maintainer Dashboard | MergeFi",
+  title: "Maintainer Dashboard | BountiFi",
 };
 
 export default async function MaintainerDashboardPage() {

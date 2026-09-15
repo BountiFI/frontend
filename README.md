@@ -1,8 +1,8 @@
-# MergeFi Frontend
+# BountiFi Frontend
 
 **Where Open Source Meets Finance — Merge code. Earn instantly.**
 
-This is the web client for **MergeFi**, a platform where sponsors fund open-source
+This is the web client for **BountiFi**, a platform where sponsors fund open-source
 work, maintainers turn GitHub issues into paid bounties, contributors complete
 them, and [Soroban](https://developers.stellar.org/docs/build/smart-contracts)
 smart contracts on the Stellar network hold funds in escrow and release
@@ -13,8 +13,8 @@ financial layer. This repo is the Next.js frontend that ties both together for
 contributors, maintainers, and sponsors.
 
 Related repositories:
-- [`mergefi/backend`](https://github.com/MergeFi/backend) — NestJS API: GitHub sync, webhooks, bounty/escrow orchestration, reputation, analytics.
-- [`mergefi/contracts`](https://github.com/MergeFi/contracts) — Soroban smart contracts: escrow, milestone funding, maintenance pools, team splits.
+- [`bountifi/backend`](https://github.com/BountiFi/backend) — NestJS API: GitHub sync, webhooks, bounty/escrow orchestration, reputation, analytics.
+- [`bountifi/contracts`](https://github.com/BountiFi/contracts) — Soroban smart contracts: escrow, milestone funding, maintenance pools, team splits.
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c019b457-90a0-4f2e-94d9-ab927de326dd" />
 
@@ -22,7 +22,7 @@ Related repositories:
 
 - Very low transaction costs make micro-bounties (a $5 doc fix, a $20 bug fix) economically practical.
 - Fast settlement means contributors get paid in minutes, not weeks.
-- Soroban smart contracts implement escrow, payment release, refunds, and split logic natively on-chain, so no one — including MergeFi — can touch funds outside the rules encoded in the contract.
+- Soroban smart contracts implement escrow, payment release, refunds, and split logic natively on-chain, so no one — including BountiFi — can touch funds outside the rules encoded in the contract.
 
 ## Core users
 
@@ -52,7 +52,7 @@ Related repositories:
 
 ```
 Next.js (App Router)                 this repo
-  ├─ Server Components fetch data ── mergefi-backend REST API
+  ├─ Server Components fetch data ── bountifi-backend REST API
   │                                    (falls back to realistic mock data
   │                                     when the backend isn't running,
   │                                     so the UI is always demoable)
@@ -108,17 +108,17 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000). With no backend running,
 every page renders against the bundled mock data in `src/lib/mock-data.ts` —
 useful for frontend-only development or a quick demo. Point
-`NEXT_PUBLIC_API_URL` at a running `mergefi-backend` instance to see live data.
+`NEXT_PUBLIC_API_URL` at a running `bountifi-backend` instance to see live data.
 
 ### Environment variables
 
-Both `NEXT_PUBLIC_API_URL` and `NEXT_PUBLIC_STELLAR_NETWORK` are validated at build time (`next.config.ts` / `src/lib/env.ts`, #26) — an unset or invalid value fails `next build`/`next dev`/`next start` immediately with a clear error, rather than silently falling back and only surfacing as a confusing on-chain failure later. `NEXT_PUBLIC_SITE_URL` is not build-time validated — it falls back to `https://mergefi.app` if unset. `.env.example` sets all three explicitly, so the quickstart above needs no manual edits.
+Both `NEXT_PUBLIC_API_URL` and `NEXT_PUBLIC_STELLAR_NETWORK` are validated at build time (`next.config.ts` / `src/lib/env.ts`, #26) — an unset or invalid value fails `next build`/`next dev`/`next start` immediately with a clear error, rather than silently falling back and only surfacing as a confusing on-chain failure later. `NEXT_PUBLIC_SITE_URL` is not build-time validated — it falls back to `https://bountifi.app` if unset. `.env.example` sets all three explicitly, so the quickstart above needs no manual edits.
 
 | Variable | Purpose | Default |
 |---|---|---|
-| `NEXT_PUBLIC_API_URL` | Base URL of the `mergefi-backend` API. Must be a well-formed URL. | `http://localhost:4000/api` |
+| `NEXT_PUBLIC_API_URL` | Base URL of the `bountifi-backend` API. Must be a well-formed URL. | `http://localhost:4000/api` |
 | `NEXT_PUBLIC_STELLAR_NETWORK` | Must be exactly `TESTNET` or `PUBLIC` (case-sensitive) — selects the Freighter network passphrase used to sign transactions. | **None.** Network selection is too consequential to guess a default for — the wrong value signs transactions with the wrong passphrase. Set it explicitly (`.env.example` does this for local dev). |
-| `NEXT_PUBLIC_SITE_URL` | Base URL used by `src/app/sitemap.ts` to generate absolute sitemap URLs. Set this when deploying to a domain other than `mergefi.app` (staging, forks, etc.). | `https://mergefi.app` |
+| `NEXT_PUBLIC_SITE_URL` | Base URL used by `src/app/sitemap.ts` to generate absolute sitemap URLs. Set this when deploying to a domain other than `bountifi.app` (staging, forks, etc.). | `https://bountifi.app` |
 
 ### Scripts
 

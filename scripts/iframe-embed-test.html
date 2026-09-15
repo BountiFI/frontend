@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>MergeFi clickjacking check (#50)</title>
+    <title>BountiFi clickjacking check (#50)</title>
   </head>
   <body>
-    <h1>MergeFi clickjacking / anti-embedding check</h1>
+    <h1>BountiFi clickjacking / anti-embedding check</h1>
     <p>
       This page plays the role of a third-party site trying to iframe
-      MergeFi. With <code>X-Frame-Options: DENY</code> in place, the browser
+      BountiFi. With <code>X-Frame-Options: DENY</code> in place, the browser
       must refuse to render the frame below — check the devtools console for
       a "Refused to display '...' in a frame because it set
       'X-Frame-Options' to 'deny'" message, and the frame area should stay
@@ -25,7 +25,7 @@
       src="http://localhost:3000/"
       width="800"
       height="500"
-      title="MergeFi (should be blocked)"
+      title="BountiFi (should be blocked)"
     ></iframe>
   </body>
 </html>

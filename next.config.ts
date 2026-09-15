@@ -19,7 +19,7 @@ loadValidatedEnv();
 /**
  * Production security headers (#50), applied to every route below.
  *
- * - X-Frame-Options: DENY — MergeFi has no legitimate iframe-embedding use
+ * - X-Frame-Options: DENY — BountiFi has no legitimate iframe-embedding use
  *   case (checked: no `iframe`/embed usage anywhere in this app), and
  *   real-money actions (fund/claim) are one click away in this UI, making
  *   clickjacking a genuine risk. If a legitimate embed need shows up later

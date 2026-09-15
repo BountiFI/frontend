@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Page not found | MergeFi",
-  description: "The requested MergeFi page could not be found.",
+  title: "Page not found | BountiFi",
+  description: "The requested BountiFi page could not be found.",
   robots: {
     index: false,
     follow: true,

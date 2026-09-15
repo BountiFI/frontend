@@ -6,19 +6,19 @@ import { BountyCard } from "@/components/bounty/BountyCard";
 import { EmptyState } from "@/components/ui/EmptyState";
 
 const issuesDescription =
-  "Browse paid, escrow-backed GitHub issues funded through MergeFi and ready for contributors.";
+  "Browse paid, escrow-backed GitHub issues funded through BountiFi and ready for contributors.";
 
 export const metadata: Metadata = {
-  title: "Paid Issues | MergeFi",
+  title: "Paid Issues | BountiFi",
   description: issuesDescription,
   openGraph: {
-    title: "Paid Issues | MergeFi",
+    title: "Paid Issues | BountiFi",
     description: issuesDescription,
     url: "/issues",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paid Issues | MergeFi",
+    title: "Paid Issues | BountiFi",
     description: issuesDescription,
   },
 };

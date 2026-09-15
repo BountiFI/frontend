@@ -18,7 +18,7 @@ import { STELLAR_NETWORK } from "@/lib/config";
 import { useAuth } from "@/context/AuthContext";
 import { useCrossTabStorage } from "@/hooks/useCrossTabStorage";
 
-const WALLET_KEY = "mergefi_wallet_address";
+const WALLET_KEY = "bountifi_wallet_address";
 
 interface WalletContextValue {
   address: string | null;
@@ -77,7 +77,7 @@ export function WalletProvider({ children }: { children: React.ReactNode }) {
 
         // Reconcile the cached address against Freighter's actual active
         // account. If the user switched accounts inside the extension
-        // without touching MergeFi, the cached address is stale (#71).
+        // without touching BountiFi, the cached address is stale (#71).
         getActiveFreighterAddress().then((live) => {
           if (live && live !== stored) {
             setAddressMismatch(true);

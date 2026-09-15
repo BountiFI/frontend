@@ -14,8 +14,8 @@ import {
   validateTeamSplits,
 } from "./utils";
 
-// Shapes returned by mergefi-backend's TypeORM entities (see
-// mergefi-backend/src/common/entities). These are intentionally loose since
+// Shapes returned by bountifi-backend's TypeORM entities (see
+// bountifi-backend/src/common/entities). These are intentionally loose since
 // we only read the fields the UI needs.
 interface RawRepository {
   owner: string;
@@ -42,7 +42,7 @@ interface RawIssue {
   body: string | null;
   labels: string[];
   repository?: RawRepository;
-  // Nested here, not on RawBounty: mergefi-backend's Bounty entity has no
+  // Nested here, not on RawBounty: bountifi-backend's Bounty entity has no
   // milestoneId column at all — the milestone association lives on Issue
   // (Issue.milestoneId / Issue.milestone), which Bounty only reaches via
   // its one-to-one `issue` relation. See adaptBounty's doc comment (#86).
@@ -68,13 +68,13 @@ export interface RawBounty {
  * - milestoneId was declared on the Bounty type but never set here — every
  *   Bounty this app constructed from live data had it permanently
  *   undefined. Fixed above by reading it from raw.issue.milestoneId, the
- *   shape confirmed against mergefi-backend's actual entities (there is no
+ *   shape confirmed against bountifi-backend's actual entities (there is no
  *   milestoneId on Bounty itself).
  * - Full field-by-field audit of Bounty vs. this function's return object
  *   (see adapters.test.ts's "field coverage" test) found milestoneId was
  *   the *only* field with this silent-drop bug; every other field,
  *   including the structurally-similar escrowId, was already mapped.
- * - Separately discovered while tracing this: mergefi-backend's
+ * - Separately discovered while tracing this: bountifi-backend's
  *   `BountiesService.list()`/`findOne()` load bounties with no `relations`
  *   option at all, so `raw.issue`/`raw.claimedBy`/`raw.team` — and now
  *   `raw.issue.milestoneId` — are likely `undefined` on every live

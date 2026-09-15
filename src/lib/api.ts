@@ -163,7 +163,7 @@ export function apiPost<T>(path: string, body?: unknown): Promise<T> {
 }
 
 /**
- * Live-data fetchers that adapt mergefi-backend's nested TypeORM entity JSON
+ * Live-data fetchers that adapt bountifi-backend's nested TypeORM entity JSON
  * into the flat shapes the UI renders, falling back to mock data (already in
  * the target shape) when the backend is unreachable.
  */

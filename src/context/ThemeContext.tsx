@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = "light" | "dark";
 
-const THEME_KEY = "mergefi_theme";
+const THEME_KEY = "bountifi_theme";
 
 export const themeInitScript = `(function(){try{var stored=localStorage.getItem("${THEME_KEY}");var theme=stored||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");if(theme==="dark")document.documentElement.classList.add("dark");}catch(e){}})();`;
 

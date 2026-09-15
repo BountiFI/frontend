@@ -20,7 +20,7 @@ export function ConnectPanel() {
           Connect your accounts
         </h1>
         <p className="mt-2 text-slate-500 dark:text-slate-400">
-          MergeFi needs GitHub to sync your repositories and a Stellar wallet
+          BountiFi needs GitHub to sync your repositories and a Stellar wallet
           to send or receive bounty payments.
         </p>
       </div>

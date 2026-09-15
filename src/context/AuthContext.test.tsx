@@ -129,7 +129,7 @@ describe("AuthContext — cross-tab sync (issue #84)", () => {
     act(() => {
       window.dispatchEvent(
         new StorageEvent("storage", {
-          key: "mergefi_wallet_address",
+          key: "bountifi_wallet_address",
           newValue: "GABC...",
           storageArea: window.localStorage,
         }),

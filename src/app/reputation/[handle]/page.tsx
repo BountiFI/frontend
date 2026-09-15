@@ -19,10 +19,10 @@ export async function generateMetadata({
   const { data: profile } = await fetchReputationByUsername(handle, mockFallback);
 
   if (!profile) {
-    return { title: "Profile not found | MergeFi" };
+    return { title: "Profile not found | BountiFi" };
   }
 
-  const title = `@${profile.handle} | MergeFi`;
+  const title = `@${profile.handle} | BountiFi`;
   const description = `${profile.mergedPRs} merged PRs · ${profile.languages.slice(0, 3).join(", ")}`;
 
   return {

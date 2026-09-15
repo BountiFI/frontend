@@ -40,7 +40,7 @@ const journey = [
   "A sponsor funds the bounty, and funds lock into a Soroban escrow contract.",
   "A contributor claims the issue and opens a pull request.",
   "The maintainer reviews and merges it.",
-  "MergeFi detects the merge via GitHub webhook.",
+  "BountiFi detects the merge via GitHub webhook.",
   "The escrow contract automatically releases payment to the contributor.",
   "The contributor's reputation and earnings profile update instantly.",
 ];
@@ -50,7 +50,7 @@ const features = [
     icon: GitPullRequest,
     title: "Repository sync",
     description:
-      "Connect GitHub and MergeFi imports repositories, issues, pull requests, and contributors automatically.",
+      "Connect GitHub and BountiFi imports repositories, issues, pull requests, and contributors automatically.",
   },
   {
     icon: ShieldCheck,
@@ -99,7 +99,7 @@ export default function HomePage() {
             <span className="text-gradient">Earn instantly.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
-            MergeFi is the financial infrastructure for open source. Sponsors
+            BountiFi is the financial infrastructure for open source. Sponsors
             fund issues, contributors get paid the moment their pull request
             is merged, and Soroban smart contracts on Stellar handle the
             escrow.
